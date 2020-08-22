@@ -29,7 +29,7 @@ module.exports = (req, res, next) => {
       return next();
     })
     .catch((err) => {
-      console.error('Error while verifying token ', err);
+      console.error('Error de verificación ', err);
       return res.status(403).json(err);
     });
 };
