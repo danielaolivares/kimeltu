@@ -49,6 +49,7 @@ exports.signup = (req, res) => {
           handle: newUser.handle,
           email: newUser.email,
           createdAt: new Date().toISOString(),
+
           //TODO Agregar token a imageUrl. Trabaje alrededor solo agregue el token de la imagen en el almacenamiento.
           imageUrl: `https://firebasestorage.googleapis.com/v0/b/${config.storageBucket}/o/${noImg}?alt=media`,
           userId,
@@ -69,6 +70,7 @@ exports.signup = (req, res) => {
         }
       });
   };
+
   // iniciar sesion
 exports.login = (req, res) => {
     const user = {

@@ -225,4 +225,5 @@ exports.getScream = (req, res) => {
         return res.status(500).json({ error: err.code });
       });
   };
-  
+  };
+
